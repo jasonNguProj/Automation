@@ -10,8 +10,6 @@ import highlightsWork.HighlightsDriverFactory.Browser;
 public class Controller {
 
 	public static void main(String[] args) {
-//		String chromeDriverPathString = "C:\\automation\\chromeDriver\\chromedriver.exe";
-//		String ieDriverPathString = "C:\\automation\\ieDriver\\IEDriverServer.exe";
 		String url = "";
 		
 		// create driver using factory, this should be done first
