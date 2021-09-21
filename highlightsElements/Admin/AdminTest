@@ -12,3 +12,24 @@ import highlightsElements.Admin.WeeklyAccomplishments;
 import highlightsElements.PM.PMSelectWeek;
 import highlightsWork.HighlightsDoWork;
 import highlightsWork.HighlightsDriverFactory;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+
+public class AdminTest{
+HighlightsDoWork highlights
+
+ @BeforeClass
+     public static void openBrowser(){
+          HighlightsDoWork highlights = new  HighlightsDoWork
+         highlights.doNavigateWork(url, 2000, true);
+         
+		} 
+
+
+
+}
+
+
+
