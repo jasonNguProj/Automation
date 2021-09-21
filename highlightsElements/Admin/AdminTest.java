@@ -29,6 +29,13 @@ ComplexDeliveryProjectStats stats = null;
 DeliveryProjects delivery = null;
 SearchOptions search = null;
 WeeklyAccomplishments accomplishments = null;
+	
+/*
+
+test cases for testing the doWork implementation
+in the various Admin implementation classes
+
+*/
 
  @BeforeClass
      public void openBrowser(){
