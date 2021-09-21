@@ -19,24 +19,86 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 
-public class AdminTest{
-HighlightsDoWork highlights;
-AdminOptions options;
-AdminWork work;
-CompletedProjects projects;
-ComplexDeliveryProjectStats stats;
-DeliveryProjects delivery;
-SearchOptions search;
-WeeklyAccomplishments accomplishments;
+public class AdminTest {
+
+HighlightsDoWork highlights = null;
+AdminOptions options = null;
+AdminWork work = null;
+CompletedProjects projects = null;
+ComplexDeliveryProjectStats stats = null;
+DeliveryProjects delivery = null;
+SearchOptions search = null;
+WeeklyAccomplishments accomplishments = null;
 
  @BeforeClass
-     public static void openBrowser(){
+     public void openBrowser(){
+      try{
+         highlights = highlights.doNavigateWork(url, 2000, true);
+		} catch (Extension e){}
+		 Assert.assertNotNull(highlights);
+		 
+	 }
+	 
+	  @Test
+	  public void AdminOptionsTest(){
+      try{
+         options = options.doWork();
+		} catch (Extension e){}
+		 Assert.assertNotNull(options);
+		 
+	 }
+	 
+	  @Test
+	  public void AdminWorkTest(){
+      try{
+         work = work.doWork();
+		} catch (Extension e){}
+		 Assert.assertNotNull(work);
+		 
+	 }
+	 
+	  @Test
+	  public void CompletedProjectsTest(){
+      try{
+         projects =  projects.doWork();
+		} catch (Extension e){}
+		 Assert.assertNotNull(projects );
+		 
+	 }
+	 
+	  public static void openBrowser(){
       try{
          highlights = highlights.doNavigateWork(url, 2000, true);
 		} catch (Extension e){}
 		 Assert.assertNotNull(highlights );
 		 
 	 }
+	 
+	  public static void openBrowser(){
+      try{
+         highlights = highlights.doNavigateWork(url, 2000, true);
+		} catch (Extension e){}
+		 Assert.assertNotNull(highlights );
+		 
+	 }
+	 
+	  public static void openBrowser(){
+      try{
+         highlights = highlights.doNavigateWork(url, 2000, true);
+		} catch (Extension e){}
+		 Assert.assertNotNull(highlights );
+		 
+	 }
+	 
+	  public static void openBrowser(){
+      try{
+         highlights = highlights.doNavigateWork(url, 2000, true);
+		} catch (Extension e){}
+		 Assert.assertNotNull(highlights );
+		 
+	 }
+	 
+	 
 
 }
 
