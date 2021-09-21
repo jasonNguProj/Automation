@@ -29,11 +29,11 @@ public class UserDoWork implements HighlightsElement {
 		
 		if(HighlightsDoWork.isAdmin()) { // logged in as an Admin
 			highlightsElementsElement.add(new AdminOptions());
-			//highlightsElementsElement.add(new ComplexDeliveryProjectStats());
-			//highlightsElementsElement.add(new SearchOptions());
-			//highlightsElementsElement.add(new WeeklyAccomplishments());
+			highlightsElementsElement.add(new ComplexDeliveryProjectStats());
+			highlightsElementsElement.add(new SearchOptions());
+			highlightsElementsElement.add(new WeeklyAccomplishments());
 			highlightsElementsElement.add(new CompletedProjects());
-			//highlightsElementsElement.add(new DeliveryProjects());
+			highlightsElementsElement.add(new DeliveryProjects());
 		} else { // logged in as a PM
 			highlightsElementsElement.add(new PMSelectWeek());
 			highlightsElementsElement.add(new SearchOptions());
