@@ -24,7 +24,6 @@ public class UserDoWork implements HighlightsElement {
 	@Override
 	public void doWork() {
 		HighlightsDoWork.doNavigateWork(url, 2000, true);
-		;
 		List<HighlightsElement> highlightsElementsElement = new ArrayList<HighlightsElement>() {};
 		
 		if(HighlightsDoWork.isAdmin()) { // logged in as an Admin
