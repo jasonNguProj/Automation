@@ -17,7 +17,7 @@ public class UserDoWork implements HighlightsElement {
 	private String url;
 
 	public UserDoWork(String url) {
-		//super();
+		super();
 		this.url = url;
 	}
 
