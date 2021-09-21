@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import highlightsElements.Admin.AdminOptions;
+
+import highlightsElements.Admin.AdminWork;
 import highlightsElements.Admin.CompletedProjects;
 import highlightsElements.Admin.ComplexDeliveryProjectStats;
 import highlightsElements.Admin.DeliveryProjects;
@@ -18,16 +20,23 @@ import static org.junit.Assert.*;
 
 
 public class AdminTest{
-HighlightsDoWork highlights
+HighlightsDoWork highlights;
+AdminOptions options;
+AdminWork work;
+CompletedProjects projects;
+ComplexDeliveryProjectStats stats;
+DeliveryProjects delivery;
+SearchOptions search;
+WeeklyAccomplishments accomplishments;
 
  @BeforeClass
      public static void openBrowser(){
-          HighlightsDoWork highlights = new  HighlightsDoWork
-         highlights.doNavigateWork(url, 2000, true);
-         
-		} 
-
-
+      try{
+         highlights = highlights.doNavigateWork(url, 2000, true);
+		} catch (Extension e){}
+		 Assert.assertNotNull(highlights );
+		 
+	 }
 
 }
 
