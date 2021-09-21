@@ -62,31 +62,34 @@ WeeklyAccomplishments accomplishments = null;
       try{
          projects =  projects.doWork();
 		} catch (Extension e){}
-		 Assert.assertNotNull(projects );
+		 Assert.assertNotNull(projects);
 		 
 	 }
 	 
-	  public static void openBrowser(){
+	  @Test
+	  public void ComplexDeliveryProjectStatsTest(){
       try{
-         highlights = highlights.doNavigateWork(url, 2000, true);
+          stats  = stats.doWork();
 		} catch (Extension e){}
-		 Assert.assertNotNull(highlights );
+		 Assert.assertNotNull(stats);
 		 
 	 }
 	 
-	  public static void openBrowser(){
+	  @Test
+	  public static void SearchOptionsTest(){
       try{
-         highlights = highlights.doNavigateWork(url, 2000, true);
+        search  = search.doWork();
 		} catch (Extension e){}
-		 Assert.assertNotNull(highlights );
+		 Assert.assertNotNull(search);
 		 
 	 }
 	 
-	  public static void openBrowser(){
+	 @Test
+	  public static void WeeklyAccomplishmentsTest(){
       try{
-         highlights = highlights.doNavigateWork(url, 2000, true);
+        accomplishments = accomplishments.doWork();
 		} catch (Extension e){}
-		 Assert.assertNotNull(highlights );
+		 Assert.assertNotNull(accomplishments);
 		 
 	 }
 	 
